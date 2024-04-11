@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-11T16:33:24.474608" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="D:\Chomchob\testcases\Testcases.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-04-11T16:33:25.213433" level="INFO">Opening browser 'chrome' to base url 'https://www.nejavu.com'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-11T16:33:25.211433" elapsed="9.967928"/>
+</kw>
+<test id="s1-t1" name="close popup" line="16">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:35.189460" level="INFO">Clicking element 'xpath=//*[@id="top"]/main/div[2]/div[1]/a'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:35.186462" elapsed="0.236304"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:35.185465" elapsed="0.238812"/>
+</kw>
+<arg>xpath=//*[@id="top"]/main/div[2]/div[1]/a</arg>
+<status status="PASS" start="2024-04-11T16:33:35.183350" elapsed="0.240927"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:35.179361" elapsed="0.245945"/>
+</test>
+<test id="s1-t2" name="click menu cartoon" line="19">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:35.437865" level="INFO">Clicking element 'xpath=//*[@id="top"]/main/div[1]/div[2]/div[2]/div[2]/nav/div/ul/li[3]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:35.437865" elapsed="5.239824"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:35.436869" elapsed="5.241815"/>
+</kw>
+<arg>xpath=//*[@id="top"]/main/div[1]/div[2]/div[2]/div[2]/nav/div/ul/li[3]</arg>
+<status status="PASS" start="2024-04-11T16:33:35.434865" elapsed="5.243819"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:40.684277" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div/small/small/div/div[1]/button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:40.684277" elapsed="0.174998"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:40.682692" elapsed="0.176583"/>
+</kw>
+<arg>xpath=/html/body/main/div[3]/div/small/small/div/div[1]/button</arg>
+<status status="PASS" start="2024-04-11T16:33:40.682692" elapsed="0.177582"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:35.427309" elapsed="5.440492"/>
+</test>
+<test id="s1-t3" name="Get Book Titles" line="23">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.054601" level="INFO">${BOOK_TITLES1} = มหาศึกคนชนคน เล่ม 3</msg>
+<var>${BOOK_TITLES1}</var>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[1]/div/div[2]/a[1]/h5</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:40.875315" elapsed="0.179286"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.135032" level="INFO">${BOOK_TITLES2} = [จัดส่ง20มิ.ย..67](BOXSET) Boruto โบรุโตะ เล่ม 20</msg>
+<var>${BOOK_TITLES2}</var>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[2]/div/div[2]/a[1]/h5</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.055648" elapsed="0.079384"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.188026" level="INFO">${BOOK_TITLES3} = คืนนี้พี่ขอดูด เล่ม 4 [Limited Edition]</msg>
+<var>${BOOK_TITLES3}</var>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[3]/div/div[2]/a[1]/h5</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.136041" elapsed="0.052983"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.241353" level="INFO">${BOOK_TITLES4} = คืนนี้พี่ขอดูด เล่ม 4</msg>
+<var>${BOOK_TITLES4}</var>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[4]/div/div[2]/a[1]/h5</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.189024" elapsed="0.052329"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.307715" level="INFO">${BOOK_TITLES5} = (Special Set A) ใครก็ได้ บอกผมที ว่านี่เป็นแค่ฝัน เล่ม 3</msg>
+<var>${BOOK_TITLES5}</var>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[5]/div/div[2]/a[1]/h5</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.241353" elapsed="0.066362"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:40.874284" elapsed="0.434435"/>
+</test>
+<test id="s1-t4" name="Press the “Add to Cart” button for all books in row one" line="30">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.319576" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[1]/div/div[3]/div[2]/form/button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.318578" elapsed="0.589413"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.317582" elapsed="0.591405"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[1]/div/div[3]/div[2]/form/button</arg>
+<status status="PASS" start="2024-04-11T16:33:41.316577" elapsed="0.592410"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:41.918616" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[2]/div/div[3]/div[2]/form/button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.917628" elapsed="0.334716"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:41.914510" elapsed="0.338830"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[2]/div/div[3]/div[2]/form/button</arg>
+<status status="PASS" start="2024-04-11T16:33:41.910987" elapsed="0.342353"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:42.256854" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[3]/div/div[3]/div[2]/form/button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:42.255850" elapsed="0.506402"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:42.254847" elapsed="0.507405"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[3]/div/div[3]/div[2]/form/button</arg>
+<status status="PASS" start="2024-04-11T16:33:42.254337" elapsed="0.508911"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:42.769821" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[4]/div/div[3]/div[2]/form/button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:42.768829" elapsed="0.594012"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:42.767832" elapsed="0.595009"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[4]/div/div[3]/div[2]/form/button</arg>
+<status status="PASS" start="2024-04-11T16:33:42.766820" elapsed="0.596021"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:43.371824" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[5]/div/div[3]/div[2]/form/button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:43.369813" elapsed="0.513749"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:43.368815" elapsed="0.515743"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div[6]/div[2]/div[5]/div/div[3]/div[2]/form/button</arg>
+<status status="PASS" start="2024-04-11T16:33:43.366831" elapsed="0.518239"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:41.311707" elapsed="2.573363"/>
+</test>
+<test id="s1-t5" name="Press the “Cart/Basket” button" line="37">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:43.893068" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div/div[4]/ul/li[2]/div'.</msg>
+<msg time="2024-04-11T16:33:46.118820" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-90.png"&gt;&lt;img src="selenium-screenshot-90.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-11T16:33:46.118820" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="nev-noti-icon"&gt;...&lt;/div&gt; is not clickable at point (1314, 65). Other element would receive the click: &lt;div class="toast toast-success" aria-live="polite" style="opacity: 0.98;"&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.122)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC10BB34]
+	(No symbol) [0x00007FF7EC109954]
+	(No symbol) [0x00007FF7EC107164]
+	(No symbol) [0x00007FF7EC105EF9]
+	(No symbol) [0x00007FF7EC0FA708]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-11T16:33:43.892073" elapsed="2.234326">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="nev-noti-icon"&gt;...&lt;/div&gt; is not clickable at point (1314, 65). Other element would receive the click: &lt;div class="toast toast-success" aria-live="polite" style="opacity: 0.98;"&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.122)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC10BB34]
+	(No symbol) [0x00007FF7EC109954]
+	(No symbol) [0x00007FF7EC107164]
+	(No symbol) [0x00007FF7EC105EF9]
+	(No symbol) [0x00007FF7EC0FA708]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:52.126844" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div/div[4]/ul/li[2]/div'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:52.126844" elapsed="2.300050"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:43.891074" elapsed="10.535820"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div/div[4]/ul/li[2]/div</arg>
+<status status="PASS" start="2024-04-11T16:33:43.890079" elapsed="10.537822"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:43.888111" elapsed="10.546325"/>
+</test>
+<test id="s1-t6" name="Verify the names of all books in the Cart" line="41">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:54.799518" level="INFO">Current page contains text ''.</msg>
+<arg>${BOOK_TITLES1}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-11T16:33:54.444980" elapsed="0.354538"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:55.034547" level="INFO">Current page contains text ''.</msg>
+<arg>${BOOK_TITLES2}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-11T16:33:54.800509" elapsed="0.234038"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:55.256352" level="INFO">Current page contains text ''.</msg>
+<arg>${BOOK_TITLES3}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.035055" elapsed="0.222294"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:55.459797" level="INFO">Current page contains text ''.</msg>
+<arg>${BOOK_TITLES4}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.257858" elapsed="0.201939"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:55.667637" level="INFO">Current page contains text ''.</msg>
+<arg>${BOOK_TITLES5}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.460795" elapsed="0.206842"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:54.443470" elapsed="1.225165"/>
+</test>
+<test id="s1-t7" name="delete item1 in Cart" line="49">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:55.673622" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.672624" elapsed="0.213191"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.672624" elapsed="0.213191"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]</arg>
+<status status="PASS" start="2024-04-11T16:33:55.671625" elapsed="0.215201"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:55.670631" elapsed="0.217194"/>
+</test>
+<test id="s1-t8" name="Confirm product item1 deletion" line="52">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:55.896379" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/button[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.895381" elapsed="0.495499"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:55.892809" elapsed="0.498071"/>
+</kw>
+<arg>xpath=/html/body/div/div/div[3]/button[1]</arg>
+<status status="PASS" start="2024-04-11T16:33:55.891814" elapsed="0.500083"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:55.890816" elapsed="0.502059"/>
+</test>
+<test id="s1-t9" name="delete item2 in Cart" line="55">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:33:56.403417" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<msg time="2024-04-11T16:33:58.404570" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-91.png"&gt;&lt;img src="selenium-screenshot-91.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-11T16:33:58.405581" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-11T16:33:56.403417" elapsed="2.005162">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:04.410966" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:04.409934" elapsed="0.162245"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:33:56.401421" elapsed="8.170758"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]</arg>
+<status status="PASS" start="2024-04-11T16:33:56.399436" elapsed="8.172743"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:56.395433" elapsed="8.177743"/>
+</test>
+<test id="s1-t10" name="confirm product item2 deletion" line="58">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:04.580763" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/button[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:04.578800" elapsed="0.269562"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:04.578800" elapsed="0.269562"/>
+</kw>
+<arg>xpath=/html/body/div/div/div[3]/button[1]</arg>
+<status status="PASS" start="2024-04-11T16:34:04.576770" elapsed="0.272573"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:04.575773" elapsed="0.274568"/>
+</test>
+<test id="s1-t11" name="delete item3 in Cart" line="61">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:04.856583" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<msg time="2024-04-11T16:34:06.653130" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-92.png"&gt;&lt;img src="selenium-screenshot-92.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-11T16:34:06.654116" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-11T16:34:04.856583" elapsed="1.800123">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:12.659403" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:12.658347" elapsed="0.201538"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:04.855574" elapsed="8.004311"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]</arg>
+<status status="PASS" start="2024-04-11T16:34:04.855574" elapsed="8.004311"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:04.853345" elapsed="8.007539"/>
+</test>
+<test id="s1-t12" name="confirm product item3 deletion" line="64">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:12.870640" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/button[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:12.869643" elapsed="0.299530"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:12.868646" elapsed="0.301529"/>
+</kw>
+<arg>xpath=/html/body/div/div/div[3]/button[1]</arg>
+<status status="PASS" start="2024-04-11T16:34:12.867671" elapsed="0.302504"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:12.866643" elapsed="0.304527"/>
+</test>
+<test id="s1-t13" name="delete item4 in Cart" line="67">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:13.176220" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<msg time="2024-04-11T16:34:15.192918" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-93.png"&gt;&lt;img src="selenium-screenshot-93.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-11T16:34:15.194498" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-11T16:34:13.176220" elapsed="2.023277">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:21.201884" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:21.200859" elapsed="0.188564"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:13.176220" elapsed="8.213203"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]</arg>
+<status status="PASS" start="2024-04-11T16:34:13.174691" elapsed="8.214732"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:13.173168" elapsed="8.217251"/>
+</test>
+<test id="s1-t14" name="confirm product item4 deletion" line="70">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:21.399539" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/button[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:21.398544" elapsed="0.263303"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:21.397546" elapsed="0.264301"/>
+</kw>
+<arg>xpath=/html/body/div/div/div[3]/button[1]</arg>
+<status status="PASS" start="2024-04-11T16:34:21.394410" elapsed="0.267437"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:21.393412" elapsed="0.269427"/>
+</test>
+<test id="s1-t15" name="delete item5 in Cart" line="73">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:21.670799" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<msg time="2024-04-11T16:34:23.502961" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-94.png"&gt;&lt;img src="selenium-screenshot-94.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-11T16:34:23.502961" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-11T16:34:21.670799" elapsed="1.833706">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7EC2B7072+63090]
+	(No symbol) [0x00007FF7EC222CC2]
+	(No symbol) [0x00007FF7EC0BEC65]
+	(No symbol) [0x00007FF7EC0CE78B]
+	(No symbol) [0x00007FF7EC0CEFEA]
+	(No symbol) [0x00007FF7EC0C4B29]
+	(No symbol) [0x00007FF7EC0C2D3A]
+	(No symbol) [0x00007FF7EC0C6159]
+	(No symbol) [0x00007FF7EC0C6200]
+	(No symbol) [0x00007FF7EC1067B5]
+	(No symbol) [0x00007FF7EC0FA496]
+	(No symbol) [0x00007FF7EC126FDA]
+	(No symbol) [0x00007FF7EC0FA00A]
+	(No symbol) [0x00007FF7EC1271F0]
+	(No symbol) [0x00007FF7EC143412]
+	(No symbol) [0x00007FF7EC126D83]
+	(No symbol) [0x00007FF7EC0F83A8]
+	(No symbol) [0x00007FF7EC0F9441]
+	GetHandleVerifier [0x00007FF7EC6B25CD+4238285]
+	GetHandleVerifier [0x00007FF7EC6EF72D+4488493]
+	GetHandleVerifier [0x00007FF7EC6E7A0F+4456463]
+	GetHandleVerifier [0x00007FF7EC3905B6+953270]
+	(No symbol) [0x00007FF7EC22E58F]
+	(No symbol) [0x00007FF7EC229264]
+	(No symbol) [0x00007FF7EC22939B]
+	(No symbol) [0x00007FF7EC219BD4]
+	BaseThreadInitThunk [0x00007FFAAEAA257D+29]
+	RtlUserThreadStart [0x00007FFAAF84AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:29.505999" level="INFO">Clicking element 'xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:29.505999" elapsed="0.185359"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:21.669803" elapsed="8.021555"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[3]/div[1]/div/div/div[2]/div[2]/div[5]</arg>
+<status status="PASS" start="2024-04-11T16:34:21.668824" elapsed="8.022534"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:21.666813" elapsed="8.025543"/>
+</test>
+<test id="s1-t16" name="confirm product item5 deletion" line="76">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:29.700895" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/button[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-11T16:34:29.700895" elapsed="0.277674"/>
+</kw>
+<arg>5x</arg>
+<arg>6s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:29.699875" elapsed="0.279692"/>
+</kw>
+<arg>xpath=/html/body/div/div/div[3]/button[1]</arg>
+<status status="PASS" start="2024-04-11T16:34:29.698881" elapsed="0.282695"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:29.695878" elapsed="0.287699"/>
+</test>
+<test id="s1-t17" name="Verify badge on cart that there are 0 books remaining" line="79">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:29.989785" level="INFO">Verifying element 'xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div[1]/div[4]/ul/li[2]/div/a/div' contains exact text '0'.</msg>
+<msg time="2024-04-11T16:34:30.441764" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-95.png"&gt;&lt;img src="selenium-screenshot-95.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-11T16:34:30.442780" level="FAIL">The text of element 'xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div[1]/div[4]/ul/li[2]/div/a/div' should have been '0' but it was '1'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-04-11T16:34:29.988787" elapsed="0.455518">The text of element 'xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div[1]/div[4]/ul/li[2]/div/a/div' should have been '0' but it was '1'.</status>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-11T16:34:35.447838" level="INFO">Verifying element 'xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div[1]/div[4]/ul/li[2]/div/a/div' contains exact text '0'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-04-11T16:34:35.445792" elapsed="0.040680"/>
+</kw>
+<arg>5x</arg>
+<arg>5s</arg>
+<arg>Element Text Should Be</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-04-11T16:34:29.987790" elapsed="5.498682"/>
+</kw>
+<arg>xpath=/html/body/main/div[1]/div[1]/div/div/div[2]/div[1]/div[4]/ul/li[2]/div/a/div</arg>
+<arg>0</arg>
+<status status="PASS" start="2024-04-11T16:34:29.987790" elapsed="5.498682"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:34:29.986792" elapsed="5.500643"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-11T16:34:35.490461" elapsed="2.827208"/>
+</kw>
+<status status="PASS" start="2024-04-11T16:33:24.477904" elapsed="73.839765"/>
+</suite>
+<statistics>
+<total>
+<stat pass="17" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="17" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
